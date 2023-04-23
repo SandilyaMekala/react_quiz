@@ -48,12 +48,12 @@ const Quiz = () => {
     }, [handleNext, timer, que]);
 
     return(
-        <div style={{margin: '50px'}}>
+        <div style={{margin: '60px'}}>
             {finish ? <div>Score: {score} </div> :
                 <div>
                     <h3>Question {que}/{finalQue}:</h3>
                     <div>
-                        <div /* className='clockTimer' */ style={{float: 'right', /* backgroundImage: `url(${clock})` */}}>
+                        <div className='clockTimer'>
                             00:{ timer >= 10 ? timer : `0${timer}` }
                         </div>
                         <div>{que_ans.map((q) => { return( q.id === que ?
@@ -69,8 +69,8 @@ const Quiz = () => {
                 </div>
             }
             {que < finalQue ?
-                <button onClick={handleNext} disabled={!disable}>Next</button> : 
-                !finish ? <button onClick={handleNext} disabled={!disable}>Finish</button> : null
+                <button className='nextbtn' onClick={handleNext} disabled={!disable}>Next</button> : 
+                !finish ? <button className='nextbtn' onClick={handleNext} disabled={!disable}>Finish</button> : null
             }
         </div>
     );

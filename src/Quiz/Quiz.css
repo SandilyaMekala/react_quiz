@@ -1,9 +1,19 @@
 .clockTimer {
-    width: 200px;
+    /* width: 200px;
     height: 200px;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     display: grid;
-    place-items: center;
+    place-items: center; */
+    float: right;
+}
+
+#opt0, #opt1, #opt2, #opt3 {
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.nextbtn {
+    float: right;
 }
