@@ -53,7 +53,7 @@ const Quiz = () => {
                 <div>
                     <h3>Question {que}/{finalQue}:</h3>
                     <div>
-                        <div className='clockTimer' style={{float: 'right', /* backgroundImage: `url(${clock})` */}}>
+                        <div /* className='clockTimer' */ style={{float: 'right', /* backgroundImage: `url(${clock})` */}}>
                             00:{ timer >= 10 ? timer : `0${timer}` }
                         </div>
                         <div>{que_ans.map((q) => { return( q.id === que ?
